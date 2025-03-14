@@ -6,6 +6,6 @@ navLink.addEventListener('click', function(event) {
     pageTransition.classList.add('active');
 
     setTimeout(() => {
-    window.location.href = 'file:///C:/Users/srich/Desktop/WedTech/HTML/home_portfolio.html';
+    window.location.href = '';
     }, 1000);
 });
