@@ -6,6 +6,6 @@ navLink.addEventListener('click', function(event) {
     pageTransition.classList.add('active');
 
     setTimeout(() => {
-    window.location.href = '';
+    window.location.href = 'Home_portoflio.html';
     }, 1000);
 });
