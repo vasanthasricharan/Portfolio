@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+}
+.container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 80px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.row:last-child {
+	margin-bottom: 0;
+}
+.image-box {
+	height: 200px;
+	margin-right: 10px;
+    cursor: pointer;
+}
+.image-box:last-child {
+	margin-right: 0;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, background-color 0.4s ease;
+}
+.image-box:hover img {
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.full-width {       
+    width: 600px;          
+}           
+.half-width {       
+    width: 300px;
+}            
+.third-width {       
+    width: 200px;            
+}
+.vertical-line {
+    position: absolute;
+    top: 60px;
+    bottom: 40px;
+    left: 50%;
+    border-left:3px solid white;
+    transform: translateX(-50%);
+}
+.left-content {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 40%;
+    color: white;
+}
+.left-content h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    color: white;
+}
+.left-content p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+.nav-bar{
+    position: absolute;
+    top: 20px;
+    left: 69%;
+}
+.navbar-right {
+    display: flex;
+    gap: 60px;
+    font-size: 20px;
+}
+.nav-link {
+
+}
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+}
+
+.page-transition .active {
+    transform: translateY(0);
+}
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+.Pro-Heading h1{
+    font-size: 50px;
+    font-style: oblique;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.my-projects{
+    display: flex;
+    margin-left: 20px;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.my-projects-1{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.4s ease;
+}
+.my-projects-1:hover {
+    transform: scale(1.1) translateY(-10px);
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    animation: spin 5s linear infinite;
+}
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
